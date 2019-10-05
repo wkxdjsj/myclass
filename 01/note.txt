@@ -1,0 +1,4 @@
+Q: How do you delploy your project? Use SSH, putty or Jenkins.
+Q: difference between JRE and JDK? JRE Java Runtime Environment can run java code. JDK include all JRE and called Java Develop Kit.
+Q: 
+
