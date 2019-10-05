@@ -1,0 +1,19 @@
+Spring four core package, beans, context, core, expression.
+Hiberante is more high coupling.
+Q: What is Spring container? application context.
+level: dao, proxy, service. Model folder include each table of the database.
+Q: what is different between maven or gradle? maven: XML.  Gradel is flexable.
+Q: what is snap shot. testing version.
+group is company name. artifact is project name.
+Spring boot is not framework, Spring is framework. Spring book is a basic setting for the framework.
+gitignore is for version control. Does not polute environment by local stuff.
+.m2 lib dependency download.
+How to do proxy setting XML. Download lib from outside. under m2 maven folder same level as dependency into setting folder.
+controller & restcontroller
+runtime exception does not need stop application. can through. 
+callback function. Front end - back end connection.
+
+LOG lever OFF FATEL ERROR WARN INFO DEBUG ALL
+INTERVIREW RUNTIME EXCEPTION DOES NOT SHUT PROGRAM.
+rest API, strong restful style. need get request and put delete. 
+

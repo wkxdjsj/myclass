@@ -1,0 +1,22 @@
+6 active usage.
+design patterm.
+singleton use getInstance() to create new object.
+hand write 5 ways of singleton class.
+strategy
+Proxy -- client does not know any change of the object. There are dynamic proxy.
+decorator used by I/O
+XML/JSON two types of data structure.
+Q:which XML parser you ever used? SAX and DOM
+C++ and UDP for gaming design.
+
+
+TomCat -- small free server.
+W3School XML DTD ---learn.
+WebServer, Request, session, action
+
+Q: JDBC statement, injection. 
+Q: what is sql injection. (Don't often use statement.)
+Every statement open a connection.
+
+
+

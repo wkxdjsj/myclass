@@ -1,0 +1,13 @@
+read Enum, & Enum Map. for configeration.
+python is dynamic(can run after compile as long as to error class reached. Java static can't compile.), java is part dynamic with reflections.
+java framework based on reflection. reflection get all root repo, thus not save to public. Q:how to reference repository (how many tables in your database.) beware of request security. get from company repository 
+GOOGLE: get declared method java
+two way to make new instense object. reflection and new instanse.
+all java is object, other than 8 basic datatype
+call method using reflection.
+invoke method.
+class, .class, getclass(), forname() what different?
+reflection, invoke is runtime based thus source level annotation is safe.
+what is annotation, what is 
+XML will cover annotation. more basic.
+

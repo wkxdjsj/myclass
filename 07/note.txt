@@ -1,0 +1,21 @@
+Thread data often store in temp storage 
+firefox each tab use one thread, Chrome each tab is a process, thus Chrome use more CPU and memory.
+Java have thread calss. Extend Thread.
+Q: difference between run() and start() 
+Q: difference between implement runnable and extends thread. --extend only one. Thus implement can implement more.
+single method interface can use lambda function.
+Lambda ideally faster but not proven. Amazon tried but not faster.
+loose couple is the reason using interface.
+hybernate.
+Q:what is concurrency issue. multi-thread racing CPU running.
+Q: what package do you use to solve concurrency issue.
+Finacial institution ask more about multi-threading.
+Q: Why Java is strong typed language.
+all object have lock. called monitor.
+Q: what is static in Java.
+Q: different with syncronized block and class.
+Q: difference between hashcode() and equals().
+Q: shallow clone and deep clone. cloneNotSupportException.
+For primitive data type and immutable objects no diff of shallow copy and deep copy
+
+
