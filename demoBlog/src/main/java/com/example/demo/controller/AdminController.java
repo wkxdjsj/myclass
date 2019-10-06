@@ -5,6 +5,9 @@ import com.example.demo.service.UserLogin;
 import com.example.demo.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+
+import javax.servlet.http.HttpSession;
 
 @RestController
 public class AdminController {
@@ -21,9 +24,12 @@ public class AdminController {
 
     @Autowired
     private UserLogin userLogin;
-    @RequestMapping(path = "/login")
+    @PostMapping("/login")
     public @ResponseBody
-    String addUser(@RequestParam String username, @RequestParam String password) {
+    String addUser(@RequestParam String username,
+                   @RequestParam String password,
+                   HttpSession session,
+                   RedirectAttributes redirectAttributes) {
         UserLogin user = userLogin.login(username, password);
 
         return "SUCCESS!";

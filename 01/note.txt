@@ -5,6 +5,7 @@ Global environment path made all commands usable globally.
 byte is -128~127. beware of the bounderay of type.
 dynamic programming. 100 level building, 2 eggs. find out which level will the egg broke.
 & get all, && only get result. if first sustain, does not containue.
+Q: Player newPlayer = new Player(); is Class - reference - new space in JVM - Object
 
 
 
