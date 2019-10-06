@@ -9,4 +9,5 @@ import javax.transaction.Transactional;
 @Repository
 public interface UserDao {
     User findByName(String name);
+    User findByUserNameAndPassword(String userName, String password);
 }

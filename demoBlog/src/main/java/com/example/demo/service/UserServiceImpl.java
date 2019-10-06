@@ -17,4 +17,10 @@ public class UserServiceImpl implements UserService {
         return user;
     }
 
+    public User login(String userName, String password){
+        User user = userDao.findByUserNameAndPassword(userName,password);
+        System.out.println("User in userService impl : " + user);
+        return user;
+    }
+
 }

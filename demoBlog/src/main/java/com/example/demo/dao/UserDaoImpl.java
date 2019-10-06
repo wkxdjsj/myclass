@@ -27,4 +27,17 @@ public class UserDaoImpl implements UserDao {
         }
 
     }
+
+    @Override
+    public User findByUserNameAndPassword(String userName, String password){
+        String sql = String.format("SELECT * FROM USER WHERE username = '%s' AND password ='%s';", userName, password);
+        RowMapper mapper = new UserMapper();
+        try{
+            User user = (User) jdbcTemplate.queryForObject(sql, mapper);
+            System.out.println("SQL in DaoImpl is" + sql);
+            return user;
+        } catch (EmptyResultDataAccessException e){
+            return new User();
+        }
+    }
 }

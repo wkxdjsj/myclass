@@ -7,16 +7,38 @@
 </head>
 <body>
 <h1> LOG IN </h1>
-<form action = "#" th:action="@{/admin/login}">
+<form method = "post" action = "#" th:action="@{/login}">
     <p> UserName:
-        <input class="textfield" placeholder="Please enter your username" size="45" maxlength="100" value onfocus="var cur=this.value; this.value=''; this.value=cur">
+        <input class="textfield" placeholder="Please enter your username" size="45" maxlength="100" >
     </p>
     <p> Password:
-        <input class="textfield" placeholder="Please enter your password" size="45" maxlength="50" value onfocus="var cur=this.value; this.value=''; this.value=cur">
+        <input class="textfield" placeholder="Please enter your password" size="45" maxlength="50" >
     </p>
 </form>
 <div>
     <input class = "button" type = "submit" value = "login">
 </div>
+
+<script>
+
+    $('.ui.form').form({
+        fields: {
+            username: {
+                identifier: 'username',
+                rules: [{
+                    type: 'empty',
+                    prompt: 'user name'
+                }]
+            },
+            password: {
+                identifier: 'password',
+                rules: [{
+                    type: 'empty',
+                    prompt: 'password'
+                }]
+            }
+        }
+    });
+</script>
 </body>
 </html>
