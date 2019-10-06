@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>LOG IN</title>
@@ -7,7 +7,7 @@
 </head>
 <body>
 <h1> LOG IN </h1>
-<form action = "#">
+<form action = "#" th:action="@{/admin/login}">
     <p> UserName:
         <input class="textfield" placeholder="Please enter your username" size="45" maxlength="100" value onfocus="var cur=this.value; this.value=''; this.value=cur">
     </p>
