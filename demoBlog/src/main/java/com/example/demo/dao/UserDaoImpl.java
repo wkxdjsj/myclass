@@ -30,7 +30,7 @@ public class UserDaoImpl implements UserDao {
 
     @Override
     public User findByUserNameAndPassword(String userName, String password){
-        String sql = String.format("SELECT * FROM USER WHERE username = '%s' AND password ='%s';", userName, password);
+        String sql = String.format("SELECT * FROM USER WHERE user_name = '%s' AND password ='%s';", userName, password);
         RowMapper mapper = new UserMapper();
         try{
             User user = (User) jdbcTemplate.queryForObject(sql, mapper);

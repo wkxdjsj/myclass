@@ -21,4 +21,10 @@ public class DemoApplicationTests {
 
 	}
 
+	@Test
+	public void login(){
+		User user = userDao.findByUserNameAndPassword("test1", "Jone18");
+		System.out.println(user.toString());
+	}
+
 }
