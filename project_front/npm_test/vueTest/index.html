@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset = "UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+<!--<div id = 'app'> Single bind-->
+<!--    <input type="text" v-bind:value = "keyword">-->
+<!--    <input type="test">-->
+
+<!--    <p> your input is : {{keyword}}</p>-->
+<!--</div>-->
+<!--<div>-->
+
+<!--</div>-->
+<div id = "app"> Double binding
+    <input type="text" v-bind:value = "keyword">
+    <input type="test" v-model="keyword">
+
+    <p> your input is : {{keyword}}</p>
+</div>
+
+<script src="../node_modules/vue/dist/vue.js"></script>
+<script>
+    new Vue({
+            el:'#app',
+            data:{
+            keyword:"hello vue."
+        }
+    })
+</script>
+</body>
+</html>

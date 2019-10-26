@@ -1,0 +1,4 @@
+2019-10-09 01:29:10.142 [GuliHikariPool housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - GuliHikariPool - Thread starvation or clock leap detected (housekeeper delta=1h18m36s666ms).
+2019-10-09 01:31:07.977 [GuliHikariPool housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - GuliHikariPool - Thread starvation or clock leap detected (housekeeper delta=1m27s821ms).
+2019-10-09 07:57:58.652 [GuliHikariPool housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - GuliHikariPool - Thread starvation or clock leap detected (housekeeper delta=6h26m20s482ms).
+2019-10-09 07:58:09.914 [GuliHikariPool housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - GuliHikariPool - Retrograde clock change detected (housekeeper delta=11s441ms), soft-evicting connections from pool.

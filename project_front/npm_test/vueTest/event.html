@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml" xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset = "UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+
+<div id = "app"> Double binding
+    <input type="text" v-bind:value = "keyword">
+    <input type="test" v-model="keyword">
+
+    <p> your input is : {{keyword}}</p>
+
+    <button v-on:click="search()">
+        Search
+    </button>
+    <p>
+        Search Result:
+        {{result.name}} <br>
+        <a :href ="result.site">{{result.site}}</a> <br>
+        {{result.city}}
+    </p>
+</div>
+
+<script src="../node_modules/vue/dist/vue.js"></script>
+<script src="../node_modules/element-ui/lib/index.js"></script>
+<script src="../node_modules/axios/lib/axios.js"></script>
+<script>
+    new Vue({
+        el:'#app',
+        data:{
+            keyword:"xiong",
+            result:{}
+        },
+
+        methods:{
+            search:function(){
+                console.log('Searching.......')
+                this.result = {
+                    site:'http://www.google.com',
+                    name:'xiong',
+                    city:['chongqing','chengdu','guiyang']
+                }
+            },
+            clear(){
+
+            }
+        }
+    })
+</script>
+</body>
+</html>

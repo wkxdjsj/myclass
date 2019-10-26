@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/png" href="../favicon.ico"/>
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/element-ui/lib/theme-chalk/index.css">
+</head>
+<body>
+<!--vue scope-->
+<div id="app">
+    <button @click="getList()">get list data</button>
+    <table>
+        <tr>
+            <td>id</td>
+            <td>name</td>
+            <td>level</td>
+        </tr>
+        <tr v-for="teacher in teacherList">
+            <td>{{teacher.id}}</td>
+            <td>{{teacher.name}}</td>
+            <td>{{teacher.level}}</td>
+            <td><img :src="teacher.avatar" alt=""></td>
+        </tr>
+    </table>
+
+    <el-table
+            :data="teacherList"
+            :default-sort="{prop: 'date', order: 'descending'}"
+            style="width: 100%">
+        <el-table-column
+                type="selection"
+                width="55">
+        </el-table-column>
+        <el-table-column
+                prop="id"
+                label="id"
+                sortable
+                width="180">
+        </el-table-column>
+        <el-table-column
+                prop="name"
+                label="Name"
+                width="180">
+        </el-table-column>
+        <el-table-column
+                prop="level"
+                label="level">
+        </el-table-column>
+        <el-table-column
+                prop="sort"
+                label="sort">
+        </el-table-column>
+        <el-table-column
+                prop="deleted"
+                label="deleted">
+        </el-table-column>
+    </el-table>
+</div>
+
+
+<script src="../node_modules/vue/dist/vue.js"></script>
+<script src="../node_modules/element-ui/lib/index.js"></script>
+<script src="../node_modules/axios/lib/axios.js"></script>
+<script>
+    new Vue({
+        el: '#app', //scope
+        data: {   // view needed data
+            teacherList: []
+        },
+        methods: {
+            getList() {
+                console.log('whatever')
+                axios
+                // .get('https://www.easy-mock.com/mock/5da1e35dd2273b14d2fa967f/mock-test-190105/admin/edu/teacher')
+                    .get('http://localhost:8110/admin/edu/teacher')
+                    .then(response => {
+                        console.log(response.data.data.items)
+                        this.teacherList = response.data.data.items
+                    })
+            }
+        }
+    })
+</script>
+</body>
+</html>

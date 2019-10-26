@@ -1,0 +1,4 @@
+2019-09-28 23:33:48.177 [http-nio-8110-exec-3] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved exception caused by handler execution: GuliException(code=21003)
+2019-09-28 23:38:11.016 [http-nio-8110-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved exception caused by handler execution: GuliException(code=21003)
+2019-09-28 23:46:48.174 [http-nio-8110-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved exception caused by handler execution: GuliException(code=21003)
+2019-09-28 23:50:38.587 [http-nio-8110-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved exception caused by handler execution: GuliException{code=21003, message=参数不正确}
