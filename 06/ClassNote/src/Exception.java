@@ -1,3 +1,5 @@
+import java.io.File;
+
 public class Exception extends Throwable {
     public static void main(String[] args){
         int c;
@@ -15,5 +17,13 @@ public class Exception extends Throwable {
             System.out.println("finally I will print out");
         }
         System.out.println("end of try catch");
+
+        System.out.println(File.separator);
+        System.out.println(File.pathSeparator);
+        System.out.println("Working Directory = " +
+                System.getProperty("user.dir"));
+
+
     }
+
 }
