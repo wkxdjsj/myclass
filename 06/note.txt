@@ -1,0 +1,5 @@
+Q: what is throwable. Its an object and the superclass of all errors and exceptions.
+通过匿名内部类@Override 覆写父类的method
+
+
+
