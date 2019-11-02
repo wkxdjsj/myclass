@@ -1,0 +1,10 @@
+hashCode the same != value the same.
+value the same == hashCode the same.
+Thus we have to rewrite toString()
+
+@retention when to use the annotation
+@target what type annotation effected
+
+
+
+
