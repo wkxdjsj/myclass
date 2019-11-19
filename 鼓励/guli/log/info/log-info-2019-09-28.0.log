@@ -1,0 +1,12 @@
+2019-09-28 23:30:13.134 [restartedMain] INFO  com.guli.edu.EduApplication - Starting EduApplication on xikai.fios-router.home with PID 31579 (/Users/xikaixiong/Documents/IntelliJWorkSpace/guli/guli-miroservice-edu/target/classes started by xikaixiong in /Users/xikaixiong/Documents/IntelliJWorkSpace/guli)
+2019-09-28 23:30:13.136 [restartedMain] INFO  com.guli.edu.EduApplication - The following profiles are active: dev
+2019-09-28 23:30:18.992 [restartedMain] INFO  com.guli.edu.EduApplication - Started EduApplication in 7.129 seconds (JVM running for 9.479)
+2019-09-28 23:37:41.071 [restartedMain] INFO  com.guli.edu.EduApplication - Starting EduApplication on xikai.fios-router.home with PID 31692 (/Users/xikaixiong/Documents/IntelliJWorkSpace/guli/guli-miroservice-edu/target/classes started by xikaixiong in /Users/xikaixiong/Documents/IntelliJWorkSpace/guli)
+2019-09-28 23:37:41.073 [restartedMain] INFO  com.guli.edu.EduApplication - The following profiles are active: dev
+2019-09-28 23:37:45.905 [restartedMain] INFO  com.guli.edu.EduApplication - Started EduApplication in 5.471 seconds (JVM running for 6.899)
+2019-09-28 23:46:10.225 [restartedMain] INFO  com.guli.edu.EduApplication - Starting EduApplication on xikai.fios-router.home with PID 31816 (/Users/xikaixiong/Documents/IntelliJWorkSpace/guli/guli-miroservice-edu/target/classes started by xikaixiong in /Users/xikaixiong/Documents/IntelliJWorkSpace/guli)
+2019-09-28 23:46:10.227 [restartedMain] INFO  com.guli.edu.EduApplication - The following profiles are active: dev
+2019-09-28 23:46:15.517 [restartedMain] INFO  com.guli.edu.EduApplication - Started EduApplication in 6.455 seconds (JVM running for 8.02)
+2019-09-28 23:50:28.728 [restartedMain] INFO  com.guli.edu.EduApplication - Starting EduApplication on xikai.fios-router.home with PID 31883 (/Users/xikaixiong/Documents/IntelliJWorkSpace/guli/guli-miroservice-edu/target/classes started by xikaixiong in /Users/xikaixiong/Documents/IntelliJWorkSpace/guli)
+2019-09-28 23:50:28.730 [restartedMain] INFO  com.guli.edu.EduApplication - The following profiles are active: dev
+2019-09-28 23:50:34.320 [restartedMain] INFO  com.guli.edu.EduApplication - Started EduApplication in 6.526 seconds (JVM running for 7.917)
